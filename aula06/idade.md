@@ -1,6 +1,7 @@
-idade 
+__Calculo da idade__
 
-algoritmo "semnome"
+```
+algoritmo "idade"
 var
    ano_atual, ano_nasc, idade: Inteiro
 inicio
@@ -11,3 +12,4 @@ inicio
       idade <- ano_atual - ano_nasc
       Escreva("Minha idade sera ", idade)
 fimalgoritmo
+```

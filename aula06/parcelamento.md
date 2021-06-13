@@ -1,3 +1,5 @@
+__Cálculo de parcelamento__
+```
 algoritmo "semnome"
 var
    valor, Vimpo, parcela, total: Real
@@ -14,3 +16,4 @@ inicio
       Escreva("O parcelamento de", Vimpo," R$ Será no total de",parcela," de")
       Escreva(total,"R$")
 fimalgoritmo
+```

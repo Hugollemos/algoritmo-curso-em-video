@@ -1,5 +1,6 @@
-de farirait para C
-algoritmo "semnome"
+__Conversão fahrenheit para C__
+```
+algoritmo "Calor"
 var
    F, C: Real
 inicio
@@ -8,3 +9,4 @@ inicio
       C <- (F - 32) / 1.8
       Escreva("No Brasil estaria ", C:4:1)
 fimalgoritmo
+```

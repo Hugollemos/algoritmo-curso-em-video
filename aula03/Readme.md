@@ -1,3 +1,4 @@
+__Média Simples__
 ```
 algoritmo "semnome"
 var

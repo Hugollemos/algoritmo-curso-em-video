@@ -1,34 +1,83 @@
 
 ```
 algoritmo "PartidaFutebol"
+algoritmo "semnome"
 var
-   gols1, gols2, dif: Real
+   gols1, gols2, dif: Inteiro
 inicio
       EscrevaL("-----------------------")
       EscrevaL("   BANGU x MADUREIRA   ")
       EscrevaL("-----------------------")
-      Escreva("Quantos gols do BANGU? ")
+      Escreva ("Quantos gols BANGU fez? ")
       Leia(gols1)
-      Escreva("Quantos gols do MADUREIRA? ")
+      Escreva ("Quantos gols MADUREIRA fez: ")
       Leia(gols2)
-      Se (gols1 > gols2) entao
+      se (gols1 > gols2) entao
          dif <- gols1 - gols2
       senao
-         dif <- gols2 - gols1
-      FimSe
-      EscrevaL("-----------------------")
-      EscrevaL(" DIFERENCA: ", dif)
-      Escolha dif
-         Caso 0
-              EscrevaL(" STATUS: EMPATE ")
-         Caso 1, 2, 3
-              EscrevaL(" STATUS: PARTIDA NORMAL ")
-         Caso 4,5, 6, 7
-              EscrevaL(" STATUS: GOLEADA ")
-         OutroCaso
-              EscrevaL(" STATUS: ALGO INCOMUM. ")
-              EscrevaL(" Voce digitou os dados corretos? ")
-      FimEscolha
-      EscrevaL("-----------------------")
+           dif <- gols2 - gols1
+      Fimse
+          Escolha dif
+                 Caso 0
+                 Escreval("--------------------")
+                 Escreval("DIFERENÇA: ", dif)
+                 Escreval("STATUS: EMPATE ")
+                 Escreval("--------------------")
+                 Caso 1, 2, 3
+                 Escreval("--------------------")
+                 Escreval("DIFERENÇA: ", dif)
+                 Escreval("STATUS: PARTIDA NORMAL ")
+                 Escreval("--------------------")
+                 Caso 6, 7, 8
+                 Escreval("--------------------")
+                 Escreval("DIFERENÇA: ", dif)
+                 Escreval("STATUS: GOLEADA ")
+                 Escreval("--------------------")
+                 OutroCaso
+                 Escreva("Você digitou o valor certo?")
+          FimEscolha
+
+fimalgoritmo
+```
+```
+algoritmo "semnome"
+var
+gols1, gols2, dif: Inteiro
+inicio
+EscrevaL("-----------------------")
+EscrevaL("   BANGU x MADUREIRA   ")
+EscrevaL("-----------------------")
+Escreva ("Quantos gols BANGU fez? ")
+Leia(gols1)
+Escreva ("Quantos gols MADUREIRA fez: ")
+Leia(gols2)
+se (gols1 > gols2) entao
+   dif <- gols1 - gols2
+senao
+   dif <- gols2 - gols1
+Fimse
+
+se (dif = 0)entao
+   Escreval("--------------------")
+   Escreval("DIFERENÇA: ", dif)
+   Escreval("STATUS: EMPATE ")
+   Escreval("--------------------")
+senao
+   se(dif >=1) e (dif<=3)entao
+      Escreval("--------------------")
+      Escreval("DIFERENÇA: ", dif)
+      Escreval("STATUS: PARTIDA NORMAL ")
+      Escreval("--------------------")
+   senao
+      se(dif >=4) e (dif<=6)entao
+         Escreval("--------------------")
+         Escreval("DIFERENÇA: ", dif)
+         Escreval("STATUS: GOLEADA ")
+         Escreval("--------------------")
+      senao
+         Escreva(" VOCÊ DIGITOU OS VALORES CERTOS???")
+      fimse
+   fimse
+fimse
 fimalgoritmo
 ```

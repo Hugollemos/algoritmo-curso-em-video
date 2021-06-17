@@ -1,4 +1,4 @@
-__Cálculo de triâgulo__ 
+__Cálculo de Triângulo__ 
 ```
 algoritmo "semnome"
 var
